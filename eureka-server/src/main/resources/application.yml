@@ -7,3 +7,11 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+    service-url:
+      defaultZone : http://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    # 关闭自我保护，否则无法有效踢出已关停的节点
+    # 如果不关闭，注册中心首页会显示：
+    # EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT.
+    # RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
+    enable-self-preservation: false
