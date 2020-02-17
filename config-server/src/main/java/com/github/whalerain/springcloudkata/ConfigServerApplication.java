@@ -1,9 +1,13 @@
-package com.whalerain.demo.springcloud;
+package com.github.whalerain.springcloudkata;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
+/**
+ * 配置服务
+ * @author ZhangXi
+ */
 @EnableConfigServer
 @SpringBootApplication
 public class ConfigServerApplication {
