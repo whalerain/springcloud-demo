@@ -8,11 +8,12 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.whalerain.demo.springcloud</groupId>
+	<groupId>com.github.whalerain.springcloudkata</groupId>
 	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eureka-server</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Cloud Eureka 服务注册中心</description>
+	<url>https://github.com/whalerain/springcloud-kata</url>
 
 	<properties>
 		<java.version>1.8</java.version>
