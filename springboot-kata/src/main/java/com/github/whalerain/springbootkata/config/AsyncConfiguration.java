@@ -27,7 +27,7 @@ public class AsyncConfiguration {
                 .setDaemon(true)
                 .build();
         int threads = Runtime.getRuntime().availableProcessors() + 1;
-        return new ThreadPoolExecutor(threads, 2*threads, 5, TimeUnit.SECONDS,
+        return new ThreadPoolExecutor(threads, 2*threads, 5, TimeUnit.MINUTES,
                 new LinkedBlockingDeque<>(1024), threadFactory,
                 (r, executor) -> {
                     log.info("my task is running !");

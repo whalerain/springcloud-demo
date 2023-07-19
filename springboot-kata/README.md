@@ -1,18 +1,18 @@
-## Springboot Basic
+## SpringBoot Kata
 
 `springboot`在使用中集成了很多的部件和功能，有些是基础，而有些则需要根据技术选型和业务需求来确定。
 
 该项目就着重与基础与常用功能配置使用最佳实践，以帮助自己及其他开发者快速构建起基础服务。
 
 # 实践清单
-
+ 
 ## Web MVC
 
 * `@SpringBootApplication` 注解
 
 ```java
 @SpringBootApplication
-public class SpringbootKataApplication {
+public class SpringBootKataApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootKataApplication.class, args);
